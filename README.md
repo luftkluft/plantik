@@ -1,4 +1,3 @@
-[![Build Status](http://circleci/github/nuxt/nuxt.js/img/liftkluft/plantik/master?token=:circle-ci-token)](https://circleci.com/gh/luftkluft/plantik/tree/master)
-[![CircleCI](https://circleci.com/gh/luftkluft/ci-ember-demo.svg?style=svg)](https://circleci.com/gh/luftkluft/ci-ember-demo)
+[![Build Status](https://circleci.com/gh/luftkluft/plantik.svg?branch=master)](https://circleci.com/gh/luftkluft/plantik)
 # plantik
 plantik MES
