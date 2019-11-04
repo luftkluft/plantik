@@ -1,0 +1,32 @@
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+       - image: circleci/ruby:2.6.3-node-browsers
+         environment:
+           - RAILS_ENV=test
+           - DATABASE_URL=postgres://username@localhost:5432/todo_api_test
+       - image: circleci/postgres:10
+         environment:
+           - POSTGRES_USER=username
+           - POSTGRES_DB=plantik_test
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # omitted steps ...
+
+      - run:
+          name: Wait for db
+          command: |
+            dockerize -wait tcp://localhost:5432 -timeout 1m
+
+      # Database setup
+      - run:
+          name: Set up DB
+          command: |
+            bundle install
+            bundle exec rake db:create db:schema:load --trace
+            bundle exec rake db:migrate
