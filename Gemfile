@@ -50,9 +50,10 @@ group :development, :test do
   gem 'fasterer'
   gem 'rubocop-rspec'
   gem 'coveralls', require: false
+  gem 'simplecov'
   gem 'database_cleaner'
   gem 'dox', require: false
-  gem 'factory_bot_rails', '~> 4.0'
+  gem 'factory_bot_rails', '~> 4.10.0'
   gem 'pundit-matchers', '~> 1.6.0'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'rspec_junit_formatter'
