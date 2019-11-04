@@ -13,7 +13,7 @@ require 'database_cleaner'
 
 require File.expand_path('../config/environment', __dir__)
 
-abort("The Rails environment is running in production mode!") if Rails.env.production?
+abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
 
 begin
@@ -33,7 +33,7 @@ RSpec.configure do |config|
 
   config.before(:each) do |example|
     DatabaseCleaner.strategy = example.metadata[:js] ? :deletion : :transaction
-  DatabaseCleaner.start
+    DatabaseCleaner.start
   end
   config.after(:each) do
     DatabaseCleaner.clean
