@@ -429,6 +429,25 @@
         null,
         1
       ],
+      "/home/user/projects/plantik/plantik_github/config/initializers/cors.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
       "/home/user/projects/plantik/plantik_github/config/initializers/devise.rb": [
         null,
         null,
@@ -780,15 +799,18 @@
         1,
         1,
         null,
-        null,
         null
       ],
       "/home/user/projects/plantik/plantik_github/config/routes.rb": [
         1,
         1,
         1,
-        null,
         1,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ],
       "/home/user/projects/plantik/plantik_github/app/controllers/application_controller.rb": [
@@ -878,7 +900,48 @@
         null,
         0,
         null,
+        null
+      ],
+      "/home/user/projects/plantik/plantik_github/spec/docs/v1/admin.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/user/projects/plantik/plantik_github/spec/spec_helper.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/user/projects/plantik/plantik_github/spec/models/admin_user_spec.rb": [
+        1,
+        null,
+        1,
+        1,
         null
       ],
       "/home/user/projects/plantik/plantik_github/spec/models/test_spec.rb": [
@@ -886,11 +949,51 @@
         null,
         1,
         1,
+        0,
+        null,
+        null
+      ],
+      "/home/user/projects/plantik/plantik_github/spec/requests/admin_spec.rb": [
         1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/home/user/projects/plantik/plantik_github/app/common/constants.rb": [
+        1,
+        0,
+        null,
+        1,
+        null
+      ],
+      "/home/user/projects/plantik/plantik_github/app/controllers/api/v1/admin_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
         null,
         null
       ]
     },
-    "timestamp": 1572876492
+    "timestamp": 1572909051
   }
 }
