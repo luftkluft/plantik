@@ -1,3 +1,3 @@
-<img src="https://travis-ci.org/{{luftkluft}}/{{plantik}}.png?branch={{master}}">
+<img src="https://circleci/build/:vcsType/:user/:repo/:branch*?token=abc123def456">
 # plantik
 plantik MES
