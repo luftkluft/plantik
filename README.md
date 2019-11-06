@@ -6,10 +6,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/luftkluft/plantik)
 [![Build Status](https://circleci.com/gh/luftkluft/plantik.svg?branch=master)](https://circleci.com/gh/luftkluft/plantik)
 # plantik
-plantik MES
+plantik MES (develop)
 
-#API DOCS
-#
 
 # Group Plantik_API
 
