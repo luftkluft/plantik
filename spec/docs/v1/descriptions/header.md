@@ -8,5 +8,3 @@
 # plantik
 plantik MES
 
-#API DOCS
-#
