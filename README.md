@@ -1,3 +1,4 @@
+![GitHub language count](https://img.shields.io/github/languages/count/luftkluft/plantik)
 ![GitHub top language](https://img.shields.io/github/languages/top/luftkluft/plantik)
 ![GitHub repo size](https://img.shields.io/github/repo-size/luftkluft/plantik)
 ![GitHub](https://img.shields.io/github/license/luftkluft/plantik)
