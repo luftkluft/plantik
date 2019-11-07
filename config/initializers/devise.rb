@@ -9,7 +9,6 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '0aae049e460a947b1bf753cba4b54881fbb2fd5148d1437c03e782af9c5fb28cb2eebc22ddc7ca6ee6167f80fff61498ca8f85333b2c6ae3e70ac43f1b29b27a'
-
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
@@ -297,5 +296,5 @@ Devise.setup do |config|
   # changed. Defaults to true, so a user is signed in automatically after changing a password.
   # config.sign_in_after_change_password = true
 
-  config.secret_key = <%= ENV['SECRET_KEY_BASE'] %>
+  config.secret_key =  Rails.application.secrets.devise_secret_key
 end
