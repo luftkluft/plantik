@@ -38,10 +38,8 @@ RSpec.configure do |config|
     DatabaseCleaner.strategy = example.metadata[:js] ? :deletion : :transaction
     DatabaseCleaner.start
   end
-  config.after(:each) do
-    DatabaseCleaner.clean
-  end
-  
+  config.after(:each) { DatabaseCleaner.clean }
+
   RSpec.configure do |config|
     config.after(:each, :dox) do |example|
       example.metadata[:request] = request
@@ -50,8 +48,9 @@ RSpec.configure do |config|
   end
 
   Dox.configure do |config|
-    config.header_file_path = Rails.root.join('spec/docs/v1/descriptions/header.md')
+    config.header_file_path =
+      Rails.root.join('spec/docs/v1/descriptions/header.md')
     config.desc_folder_path = Rails.root.join('spec/docs/v1/descriptions')
-    config.headers_whitelist = ['Accept', 'X-Auth-Token']
+    config.headers_whitelist = %w[Accept X-Auth-Token]
   end
 end

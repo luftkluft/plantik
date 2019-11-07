@@ -4,8 +4,7 @@ module Api
   module V1
     class AdminController < ActionController::Base
       protect_from_forgery with: :exception
-
-      def index       
+      def index
         redirect_to APP_URL_ADMIN
       end
     end
