@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       get 'admin', to: 'admin#index'
+      # devise_for :users
+      resources :user
     end
   end
 end
