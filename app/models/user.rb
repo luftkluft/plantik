@@ -1,14 +1,14 @@
 require 'bcrypt'
 
 class User < ApplicationRecord
-  has_secure_password
+  # has_secure_password
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :trackable
 
-  # TODO_magic_constants
+  # TODO: magic_constants
   validates :username, length: { in: 2..20 }
   validates :bio, length: { maximum: 500 }, allow_blank: true
   validates :email, uniqueness: { case_sensitive: false }, presence: true,
@@ -16,8 +16,6 @@ class User < ApplicationRecord
                               message: 'Only emails allowed' }
 
   validates :role, presence: true
-
-  attr_accessor :password
 
   def self.authenticate(password)
     BCrypt::Password.new(encrypted_password) == password
