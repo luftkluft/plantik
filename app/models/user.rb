@@ -9,21 +9,21 @@ class User < ApplicationRecord
          :trackable
 
   # TODO_magic_constants
-  validates :username, presence: true, length: { in: 2..20 }
+  validates :username, length: { in: 2..20 }
   validates :bio, length: { maximum: 500 }, allow_blank: true
   validates :email, uniqueness: { case_sensitive: false }, presence: true,
-                    format: { with: /\A[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})\Z/,
+                    format: { with: /\A([\w+\-]\.?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i,
                               message: 'Only emails allowed' }
 
   validates :role, presence: true
 
   attr_accessor :password
 
-  def authenticate(plaintext_password)
-    if BCrypt::Password.new(encrypted_password) == plaintext_password
-      self
-    else
-      false
-    end
+  def self.authenticate(password)
+    BCrypt::Password.new(encrypted_password) == password
+  end
+
+  def self.make_encrypted_password(password)
+    BCrypt::Password.create(password)
   end
 end

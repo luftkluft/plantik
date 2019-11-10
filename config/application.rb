@@ -17,5 +17,7 @@ module Plantik
     config.generators.stylesheets = false
     config.generators.javascripts = false
     config.secret_key_base = ENV['SECRET_KEY_BASE']
+
+    config.autoload_paths << "#{Rails.root}/app/lib"
   end
 end
