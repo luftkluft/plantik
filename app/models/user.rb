@@ -1,3 +1,4 @@
+VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i.freeze # TODO: common constant
 require 'bcrypt'
 
 class User < ApplicationRecord
@@ -12,8 +13,7 @@ class User < ApplicationRecord
   validates :username, length: { in: 2..20 }
   validates :bio, length: { maximum: 500 }, allow_blank: true
   validates :email, uniqueness: { case_sensitive: false }, presence: true,
-                    format: { with: /\A([\w+\-]\.?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i,
-                              message: 'Only emails allowed' }
+                    format: { with: VALID_EMAIL_REGEX, message: 'Only emails allowed' }
 
   validates :role, presence: true
 

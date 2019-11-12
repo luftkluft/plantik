@@ -10,14 +10,9 @@ module Api
       end
 
       def create
-        # TODO: move to users service
-        user = User.new(
-          email: user_params[:email],
-          password: user_params[:password],
-          password_confirmation: user_params[:password_confirmation]
-        )
-
-        if user.save
+        result = UserService.new.action(@current_user, 'user_create', user_params)
+        if result[:errors].empty? && result[:succes].size.positive?
+          user = result[:success]
           token = JsonWebToken.encode_payload(user_id: user.id)
           render json: { user: UserSerializer.new(user), jwt: token }, status: :created
         else
