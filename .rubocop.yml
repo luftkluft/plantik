@@ -17,3 +17,12 @@ FrozenStringLiteralComment:
 
 ShadowingOuterLocalVariable:
   Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 17
+
+Metrics/BlockLength:
+  Max: 35

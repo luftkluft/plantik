@@ -1,0 +1,12 @@
+en:
+  appid: "plantik_dev"
+  # error messages
+  err_mes:
+    user_creation_error: 'Ошибка создания пользователя!'
+  # success messages
+  suc_mes:
+    user_created_successfully: 'Пользователь успешно создан!'
+    user_login_successfully: 'Добро пожаловать!'
+  # request messages
+  req_mes:
+    log_in: 'Залогиньтесь пожалуйста!'

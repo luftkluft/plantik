@@ -22,10 +22,10 @@ class ValidatorService
   end
 
   def action_validator(action)
-    # TODO: now in developing
+    # TODO: dev
   end
 
   def params_validator(action, params)
-    # TODO: now in developing
+    # TODO: dev
   end
 end

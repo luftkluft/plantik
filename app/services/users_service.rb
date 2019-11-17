@@ -7,7 +7,7 @@ class UserService
     @result[:errors] = ValidatorService.new.user_validator(current_user, type, user_params)
     return @result unless @result[:errors].empty?
 
-    case type # TODO: action list and i18n
+    case type # TODO: action list
     when 'user_create'
       user_create(user_params)
     end
@@ -24,6 +24,6 @@ class UserService
     )
     @result[:success].push(user)
   rescue StandardError
-    @result[:errors].push('ошибка создания юзера')
+    @result[:errors].push(I18n.t('err_mes.user_creation_error'))
   end
 end

@@ -30,4 +30,14 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  appid: "plantik_dev"
+  # error messages
+  err_mes:
+    user_creation_error: 'User creation error!'
+  # success messages
+  suc_mes:
+    user_created_successfully: 'User created successfully!'
+    user_login_successfully: 'Welcome!'
+  # request messages
+  req_mes:
+    log_in: 'Please log in!'
