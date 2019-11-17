@@ -17,8 +17,8 @@ class ValidatorService
   def current_user_validator(current_user, action)
     return if action == 'user_create' && current_user.nil?
 
-    @errors.push('несанкционированный доступ') unless current_user.nil?
-    @errors.push('залогинтесь') if current_user.nil?
+    @errors.push(I18n.t('err_mes.forbidden')) unless current_user.nil?
+    @errors.push(I18n.t('req_mes.log_in')) if current_user.nil?
   end
 
   def action_validator(action)
