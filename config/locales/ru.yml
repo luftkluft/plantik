@@ -3,6 +3,8 @@ en:
   # error messages
   err_mes:
     user_creation_error: 'Ошибка создания пользователя!'
+    forbidden: 'В доступе отказано!'
+    wrong_login_or_password: 'Неверный логин или пароль!'
   # success messages
   suc_mes:
     user_created_successfully: 'Пользователь успешно создан!'

@@ -34,6 +34,8 @@ en:
   # error messages
   err_mes:
     user_creation_error: 'User creation error!'
+    forbidden: 'Access denied!'
+    wrong_login_or_password: 'Wrong login or password!'
   # success messages
   suc_mes:
     user_created_successfully: 'User created successfully!'
