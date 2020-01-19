@@ -6,7 +6,6 @@ class ValidatorService
   end
 
   def user_validator(current_user, action, params)
-    # TODO: i18n
     current_user_validator(current_user)
     action_validator(action)
     params_validator(action, params)
