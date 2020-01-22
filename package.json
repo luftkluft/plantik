@@ -1,41 +1,14 @@
 {
-  "name": "plantik",
-  "version": "0.2.0",
-  "description": "![GitHub language count](https://img.shields.io/github/languages/count/luftkluft/plantik) ![GitHub top language](https://img.shields.io/github/languages/top/luftkluft/plantik) ![GitHub repo size](https://img.shields.io/github/repo-size/luftkluft/plantik) ![GitHub](https://img.shields.io/github/license/luftkluft/plantik) ![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/luftkluft/plantik/master) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/luftkluft/plantik) ![GitHub last commit](https://img.shields.io/github/last-commit/luftkluft/plantik) [![Build Status](https://circleci.com/gh/luftkluft/plantik.svg?branch=master)](https://circleci.com/gh/luftkluft/plantik) # plantik plantik MES (dev)",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/luftkluft/plantik.git"
-  },
-  "keywords": [],
-  "author": "luftkluft",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/luftkluft/plantik/issues"
-  },
-  "homepage": "https://github.com/luftkluft/plantik#readme",
-  "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
-    "@babel/preset-react": "^7.8.3",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^3.4.2",
-    "html-webpack-plugin": "^3.2.0",
-    "style-loader": "^1.1.3",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1"
-  },
   "dependencies": {
+    "@babel/preset-react": "^7.8.3",
+    "@rails/webpacker": "^4.2.2",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react_ujs": "^2.6.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.10.1"
   }
 }
