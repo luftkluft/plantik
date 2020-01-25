@@ -29,7 +29,7 @@ app/assets/javascripts/
 
 # vscode
 .vscode
-/public/packs
+# /public/packs
 /public/packs-test
 /node_modules
 /yarn-error.log
