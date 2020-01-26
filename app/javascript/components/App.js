@@ -2,11 +2,14 @@ import React from "react"
 import classes from './app.module.css'
 
 class App extends React.Component {
-  render () {
+  render() {
     return (
-      <React.Fragment>
-        App
-      </React.Fragment>
+      <div className={classes.grid}>
+        <header className={classes.header}>шапка</header>
+        <aside className={classes.aside}>тулбар</aside>
+        <content className={classes.content}>содержание</content>
+        <footer className={classes.footer}>подвал</footer>
+      </div>
     );
   }
 }

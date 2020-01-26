@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+  /*grid-gap: 2px;*/
+  grid-template-rows: 35px minmax(35px, auto) 35px;
+  height: 95vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #0000FF;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: #87CEEB;
+}
+
+.content {
+  grid-area: content;
+  background-color:#FFFFFF;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #DCDCDC;
+}
+
+@media (min-width: 320px) {
+  .grid {
+    grid-template-columns: 150px 1fr;
+    grid-template-areas:
+      "header header"
+      "aside content"
+      "footer footer"
+  }
+}
