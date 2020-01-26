@@ -19,7 +19,7 @@ config/secrets.yml
 .DS_Store
 
 # Ignore node_modules
-node_modules/
+# node_modules/
 
 # Ignore Webpack Generated Bundle
 app/assets/javascripts/
@@ -29,6 +29,7 @@ app/assets/javascripts/
 
 # vscode
 .vscode
+
 # /public/packs
 /public/packs-test
 /node_modules

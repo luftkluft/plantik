@@ -8,7 +8,7 @@ class GreetUser extends React.Component {
         <div className={classes.red}>
           Name: {this.props.name}
         </div>
-        <h3>Wow! Module css run!</h3>
+        <h3>Test2! Module css run!</h3>
       </React.Fragment>
     );
   }
